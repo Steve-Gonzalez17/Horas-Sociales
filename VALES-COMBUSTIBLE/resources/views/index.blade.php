@@ -8,9 +8,5 @@
 <body>
 
 <P>Iva = %asd13</P>
-<b>5</b>
-
-<b>2</b>
-//Conflicto
 </body>
 </html>
