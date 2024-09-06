@@ -8,6 +8,11 @@
 <body>
 
 <P>Iva = %asd13</P>
-    
+<b>2</b>
+<table>
+    <tr>
+        <th>hola</th>
+    </tr>
+</table>
 </body>
 </html>
