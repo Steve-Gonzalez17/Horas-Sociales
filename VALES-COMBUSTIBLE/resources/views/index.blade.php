@@ -1,4 +1,5 @@
 @include('components.navbar')
+@include('components.scripts')
 <!DOCTYPE html>
 <html lang="en">
 <head>
