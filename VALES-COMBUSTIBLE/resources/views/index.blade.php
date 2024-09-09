@@ -1,3 +1,4 @@
+@include('components.navbar')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,6 @@
 </head>
 <body>
 
-<P>Iva = %asd13</P>
+<P>Iva = %13</P>
 </body>
 </html>
