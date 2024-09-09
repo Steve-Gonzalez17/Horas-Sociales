@@ -8,7 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-
-<P>Iva = %13</P>
+    <label class="input input-bordered flex items-center gap-2">
+        <input type="text" class="grow" placeholder="Search" />
+        <span class="badge badge-info">Optional</span>
+      </label>
 </body>
 </html>
