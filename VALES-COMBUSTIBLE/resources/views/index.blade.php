@@ -197,7 +197,7 @@
                 </div>
 
                 <div class="flex items-center justify-center">
-                    <button class="btn btn-outline bg-white w-[15rem] text-black btn-white ">Generar</button>
+                    <button class="btn btn-outline  flex-grow bg-white w-[15rem] text-black btn-white ">Generar</button>
 
                 </div>
 
@@ -543,7 +543,10 @@
                     </div>
                 <input type="number"  placeholder="Type here" class="bg-gray-50 border border-gray-300 input input-bordered flex-grow" />
             </label>
-            <button class="btn btn-wide flex-grow">Guardar</button>
+            <div class="flex items-center justify-center">
+            <button class="btn btn-outline flex-grow w-[15rem] text-black btn-white ">Guardar</button>
+            </div>
+            
             </form>
 
             <div class="divider"></div>
@@ -555,19 +558,16 @@
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 <th scope="col" class="px-6 py-3">
-                                    Corr
+                                    Nsol
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    Nfactura
+                                    Solicita
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    ...
+                                    Dept
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    ...
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    ...
+                                    Mision
                                 </th>
                             </tr>
                         </thead>
@@ -586,36 +586,12 @@
                                 <td class="px-6 py-4">
                                     ...
                                 </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
                             </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope=""
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     ...
                                 </th>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope=""
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    ...
-                                </th>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
                                 <td class="px-6 py-4">
                                     ...
                                 </td>
@@ -640,6 +616,18 @@
                                 <td class="px-6 py-4">
                                     ...
                                 </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
                                 <td class="px-6 py-4">
                                     ...
                                 </td>
@@ -658,18 +646,12 @@
                                 <td class="px-6 py-4">
                                     ...
                                 </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
                             </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope=""
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     ...
                                 </th>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
                                 <td class="px-6 py-4">
                                     ...
                                 </td>
