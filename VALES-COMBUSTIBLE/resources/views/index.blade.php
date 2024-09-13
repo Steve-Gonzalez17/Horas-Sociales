@@ -45,61 +45,167 @@
     </div>
 
     <!-- Modal 1 -->
-    <button class="btn " onclick="my_modal_1.showModal()">open modal</button>
     <dialog id="my_modal_1" class="modal ">
-        <div class="modal-box max-w-7xl bg-white">
-            <h2 class="text-center text-black font-bold">Ingreso de vales de combustible a bodega general</h2>
+        <div class="modal-box max-w-7xl bg-[#686D76]">
+            <h2 class="text-center text-white font-bold mb-[1.6rem] mt-[0.8rem]">Ingreso de vales de combustible a bodega general
+            </h2>
 
-            <div class="divider"></div>
+            <div class="mb-2">
+                <hr />
+            </div>
             <form class="p-4 md:p-5 ">
-                <div class="grid gap-6 mb-6 md:grid-cols-2">
+                <div class="grid gap-6 mb-6 md:grid-cols-3">
                     <div>
-                        <label for="first_name"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-                        <input type="text" id="first_name"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="John" required />
-                    </div>
-                    <div>
-                        <label for="last_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last
-                            name</label>
-                        <input type="text" id="last_name"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Doe" required />
-                    </div>
-                    <div>
-                        <label for="company"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Company</label>
-                        <input type="text" id="company"
-                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Flowbite" required />
-                    </div>
-
-                    <div class="dark:text-black">
-                        <input type="text" placeholder="Type here"
-                            class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                                <span class="label-text text-white">Tipo de Combustible</span>
+                            </div>
+                            <select type="text" placeholder="Type here"
+                                class="bg-gray-50 border text-gray-500 border-gray-300 select select-bordered w-full max-w-xs">
+                                <option>ESPECIAL</option>
+                                <option>REGULAR</option>
+                                <option>DIESEL</option>
+                            </select>
+                        </label>
                     </div>
                     <div>
-                        <input type="date" placeholder="Type here"
-                            class="bg-[#686D76] border-white text-white border input input-bordered w-full max-w-xs" />
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                                <span class="label-text text-white">Tipo de Fondo</span>
+                            </div>
+                            <select type="text" placeholder=""
+                                class="bg-gray-50 border text-gray-500 border-gray-300 select select-bordered w-full max-w-xs">
+                                <option>TESORERIA</option>
+                                <option>RECURSOS PROPIOS</option>
+                                <option>PROYECTO</option>
+                                <option>DONACION</option>
+                                <option>FONDO GOES</option>
+                            </select>
+                        </label>
                     </div>
-
+                    <div>
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                                <span class="label-text text-white">Programa:</span>
+                            </div>
+                            <select type="text" placeholder="Type here"
+                                class="bg-white text-gray-500  border-gray-300 select select-bordered w-full max-w-xs">
+                                <option>NORMAL</option>
+                                <option>SEMANA SANTA</option>
+                                <option>FIESTAS AGOSTINAS</option>
+                                <option>FIN DE AÑO</option>
+                                <option>FINLANDESA</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <div class="label">
+                            <span class="label-text text-white">Fecha Compra:</span>
+                        </div>
+                        <div>
+                            <input type="date" placeholder="Type here"
+                                class="bg-[#686D76] border-white text-white border input input-bordered w-full max-w-xs" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="label">
+                            <span class="label-text text-white">Fecha Vigencia:</span>
+                        </div>
+                        <div class="flex w-full justify-center items-center">
+                            <div>
+                                <input type="date" placeholder="Type here"
+                                    class="bg-[#686D76] border-white text-white border input input-bordered w-full max-w-xs" />
+                            </div>
+                            <div class="divider divider-horizontal divider-error text-white">Hasta</div>
+                            <div>
+                                <input type="date" placeholder="Type here"
+                                    class="bg-[#686D76] border-white text-white border input input-bordered w-full max-w-xs" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                                <span class="label-text text-white">#Orden de Compra</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full max-w-xs" />
+                        </label>
+                    </div>
+                    <div>
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                                <span class="label-text text-white">#Factura</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full max-w-xs" />
+                        </label>
+                    </div>
+                    <div>
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                                <span class="label-text text-white">NIT/Proveedor</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full max-w-xs" />
+                        </label>
+                    </div>
+                    <div>
+                        <label class="form-control w-full max-w-xs ">
+                            <div class="label">
+                                <span class="label-text text-white">Proveedor</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full max-w-xs " />
+                        </label>
+                    </div>
+                    <div>
+                        <label class="form-control w-full max-w-xs ">
+                            <div class="label">
+                                <span class="label-text text-white">Valor de vale</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white  text-gray-500 input input-bordered w-full max-w-xs " />
+                        </label>
+                    </div>
+                    <div>
+                        <label class="form-control w-full max-w-xs ">
+                            <div class="label">
+                                <span class="label-text text-white">Precio de Referencia Actual</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full max-w-xs " />
+                        </label>
+                    </div>
+                    <div>
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                                <span class="label-text text-white">Series de los vales:</span>
+                            </div>
+                            <input type="text" placeholder="Digite el Cuerpo del #de vale"
+                                class="bg-white text-gray-500 input input-bordered w-full max-w-xs" />
+                            <div class="label">
+                                <span class="label-text-alt text-white">Ejemplo "03112220836400"</span>
+                            </div>
+                        </label>
+                    </div>
                 </div>
                 <div class="mb-6">
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email
-                        address</label>
-                    <input type="email" id="email"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="john.doe@company.com" required />
+                    <label  class="label-text text-white ">Observación:</label>
+                        <textarea class="bg-white text-gray-500 textarea textarea-bordered w-full h-32 mt-1"
+                        placeholder=""></textarea>
                 </div>
 
+                <div class="flex items-center justify-center">
+                    <button class="btn btn-outline bg-white w-[15rem] text-black btn-white ">Generar</button>
 
-                <button type="submit"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                </div>
 
             </form>
 
-            <div class="divider"></div>
+            <div class="mb-2">
+                <hr />
+            </div>
 
             <div class="p-4 md:p-5">
                 <div class="relative overflow-x-auto shadow-md sm:rounded-lg"
@@ -114,14 +220,16 @@
                                     Nfactura
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    ...
+                                    Ser_vale
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    ...
+                                    Nocompra
                                 </th>
                                 <th scope="col" class="px-6 py-3">
-                                    ...
+                                    Proveedor
                                 </th>
+                                
+                                
                             </tr>
                         </thead>
                         <tbody>
