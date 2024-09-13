@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.button-start {
+    transition: transform 0.5s ease;
+}
+
+.button-start:hover {
+    transform: scale(1.1);
+}
+
+.img-icon-container img {
+    width: 50%;
+    margin: 50px;
+}
