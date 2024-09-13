@@ -8,7 +8,5 @@
             <!-- Puedes añadir más contenido aquí si lo necesitas -->
         </div>
     </div>
-  
-    </div>
   </nav>
 </div>
