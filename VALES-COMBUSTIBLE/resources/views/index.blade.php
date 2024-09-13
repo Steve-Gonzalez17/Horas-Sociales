@@ -13,7 +13,7 @@
 
     <div style="width: 100%; height: 90%; display: flex; justify-content: center; align-items: center; gap: 60px">
 
-        <a href="#">
+        <a href="#" data-modal-target="crud-modal" data-modal-toggle="crud-modal">
             {{-- button 1 --}}
             <div class="card card-compact bg-base-100 w-96 shadow-xl button-start">
                 <figure class="img-icon-container">
