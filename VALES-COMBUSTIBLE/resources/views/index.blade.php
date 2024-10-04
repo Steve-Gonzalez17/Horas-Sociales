@@ -21,7 +21,7 @@
                 </figure>
                 <div class="card-body">
                     <h2 class="card-title">Ingreso de vales de combustible</h2>
-                    <p> &nbsp; a bodega general</p>
+                    <p> &nbsp; Bodega general</p>
 
                 </div>
             </div>
@@ -208,10 +208,8 @@
             </div>
 
             <div class="p-4 md:p-5">
-                <div class="relative overflow-x-auto shadow-md sm:rounded-lg"
-                    style="max-width: 1700px; max-height: 300px; overflow: auto;">
-                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-white uppercase bg-[#686D76]">
                             <tr>
                                 <th scope="col" class="px-6 py-3">
                                     Corr
@@ -232,7 +230,47 @@
                                 
                             </tr>
                         </thead>
+                </table>
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg"
+                    style="max-width: 1700px; max-height: 300px; overflow: auto;">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                         <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                            </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope=""
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -376,8 +414,8 @@
                             </div>
                             <select type="text"  placeholder="Type here" class="bg-gray-50 border border-gray-300 select select-bordered w-full max-w-xs" >
                             <option disabled selected>Who shot first?</option>
-                            <option>Han Solo</option>
-                            <option>Greedo</option>
+                            <option>...</option>
+                            <option>...</option>
                         </select>
                           </label>
                     </div>
@@ -388,8 +426,8 @@
                             </div>
                             <select type="text"  placeholder="Type here" class="bg-gray-50 border border-gray-300 select select-bordered w-full max-w-xs" >
                             <option disabled selected>Who shot first?</option>
-                            <option>Han Solo</option>
-                            <option>Greedo</option>
+                            <option>...</option>
+                            <option>...</option>
                         </select>
                           </label>
                     </div>
@@ -413,7 +451,7 @@
                     <div>
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
-                              <span class="label-text">Mision</span>
+                              <span class="label-text">Misión</span>
                             </div>
                             <textarea class="textarea textarea-ghost bg-gray-50 border border-gray-300" placeholder="Bio"></textarea>
                           </label>
@@ -465,8 +503,8 @@
                                 </div>
                                 <select type="text"  placeholder="Type here" class="bg-gray-50 border border-gray-300 select select-bordered w-full max-w-xs" >
                                 <option disabled selected>Who shot first?</option>
-                                <option>Han Solo</option>
-                                <option>Greedo</option>
+                                <option>...</option>
+                                <option>...</option>
                             </select>
                               </label>
                         </div>     
@@ -477,8 +515,8 @@
                                 </div>
                                 <select type="text"  placeholder="Type here" class="bg-gray-50 border border-gray-300 select select-bordered w-full max-w-xs" >
                                 <option disabled selected>Who shot first?</option>
-                                <option>Han Solo</option>
-                                <option>Greedo</option>
+                                <option>...</option>
+                                <option>...</option>
                             </select>
                             <div class="divider divider-error"></div>
                             <input type="number"  placeholder="Type here" class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
@@ -487,7 +525,7 @@
                         <div>
                             <label class="form-control w-full max-w-xs">
                                 <div class="label">
-                                  <span class="label-text">Convercion</span>
+                                  <span class="label-text">Converción</span>
                                 </div>
                                 <input type="number"  placeholder="Type here" class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
                                 <div class="divider divider-error">Total galones por VALE</div>
@@ -549,12 +587,10 @@
             
             </form>
 
-            <div class="divider"></div>
+            <div class="divider divider-error"></div>
 
             <div class="p-4 md:p-5">
-                <div class="relative overflow-x-auto shadow-md sm:rounded-lg"
-                    style="max-width: 1700px; max-height: 300px; overflow: auto;">
-                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                         <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 <th scope="col" class="px-6 py-3">
@@ -571,7 +607,41 @@
                                 </th>
                             </tr>
                         </thead>
+            </table>  
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg"
+                    style="max-width: 1700px; max-height: 300px; overflow: auto;">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                         <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                            </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope=""
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
