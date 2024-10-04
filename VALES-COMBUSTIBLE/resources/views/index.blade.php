@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vales Combustibles</title>
 </head>
 
 <body class="bg-[#30475e]">
@@ -48,7 +48,7 @@
                 {{-- button 3 --}}
                 <div class="card card-compact bg-base-100 w-96 shadow-xl button-start">
                     <figure class="img-icon-container">
-                        <img src="{{ asset('img/warehouse-icon-2.png') }}" alt="vouchers" />
+                        <img src="{{ asset('img/proyecto-de-ley.png') }}" alt="vouchers" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Liquidacion de vales en bodega general</h2>
@@ -933,6 +933,481 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal 3 -->
+    <dialog id="my_modal_3" class="modal ">
+        <div class="modal-box max-w-7xl bg-[#84878d]">
+            <h2 class="text-center text-white font-bold mb-[1.6rem] mt-[0.8rem] text-[1.2rem]">Liquidación Vales de
+                Combustibles
+            </h2>
+
+            <div class="mb-2">
+                <hr />
+            </div>
+            <form class="p-4 md:p-5 ">
+                <div class="flex w-full mb-10 ">
+                    <label class="form-control w-full flex-grow mr-4">
+                        <div class="label flex-grow">
+                            <span class="label-text text-white">Número de solicitud</span>
+                        </div>
+                        <input type="text" placeholder="Type here"
+                            class="bg-white text-gray-500 input input-bordered w-full " />
+                    </label>
+
+                    <label class="form-control w-full flex-grow">
+                        <div class="label flex-grow">
+                            <span class="label-text text-white">Programa:</span>
+                        </div>
+                        <select type="text" placeholder="Type here"
+                            class="bg-white text-gray-500  border-gray-300 select select-bordered w-full ">
+                            <option>NORMAL</option>
+                            <option>SEMANA SANTA</option>
+                            <option>FIESTAS AGOSTINAS</option>
+                            <option>FIN DE AÑO</option>
+                            <option>FINLANDESA</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="grid gap-6 mb-6 md:grid-cols-3 w-full">
+
+                    <div class="flex justify-center items-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white ">Solicita:</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full " disabled/>
+                        </label>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Depto Solicita:</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-fulls" />
+                        </label>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Misión:</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white ">Fecha procesada:</span>
+                            </div>
+                            <input type="date" placeholder="Type here"
+                                class="bg-[#7b7f85] border-white text-white input input-bordered w-full " />
+                        </label>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Destino:</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Autoriza:</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Motorista:</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Carnet:</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Tipo combustible:</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" />
+                        </label>
+                    </div>
+
+                </div>
+                <div class="mb-6">
+                    <label class="form-control w-full ">
+                        <div class="label">
+                            <span class="label-text text-white">Estatus:</span>
+                        </div>
+                        <input type="text" placeholder="Type here"
+                            class="bg-white text-gray-500 input input-bordered w-full" />
+                    </label>
+                </div>
+
+
+                <div class="mb-2">
+                    <hr />
+                </div>
+                <h2 class="text-center text-white font-bold mb-2 mt-[0.8rem] text-[1.2rem]">Precios de Referencia</h2>
+                <div class="grid gap-6 mb-6 md:grid-cols-3 w-full">
+
+                    <div class="flex items-center justify-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Placa:</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">De compra:</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Actual:</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" />
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <hr />
+                </div>
+                <h2 class="text-center text-white font-bold mb-2 mt-[0.8rem] text-[1.2rem]">Cantidad de vales</h2>
+                <div class="flex w-full mb-10 ">
+                    <label class="form-control w-full flex-grow mr-4">
+                        <div class="label flex-grow">
+                            <span class="label-text text-white">Solicitados</span>
+                        </div>
+                        <input type="text" placeholder="Type here"
+                            class="bg-white text-gray-500 input input-bordered w-full " />
+                    </label>
+
+                    <label class="form-control w-full flex-grow mr-4">
+                        <div class="label flex-grow">
+                            <span class="label-text text-white">Digitados</span>
+                        </div>
+                        <input type="text" placeholder="Type here"
+                            class="bg-white text-gray-500 input input-bordered w-full " />
+                    </label>
+                </div>
+                <div class="mb-6">
+                    <label class="form-control w-full ">
+                        <div class="label">
+                            <span class="label-text text-white">Serie de vale:</span>
+                        </div>
+                        <input type="text" placeholder="Type here"
+                            class="bg-white text-gray-500 input input-bordered w-full" />
+                    </label>
+                </div>
+                <div class="flex w-full mb-10 ">
+                    <label class="form-control w-full flex-grow mr-4">
+                        <div class="label flex-grow">
+                            <span class="label-text text-white">Serie:</span>
+                        </div>
+                        <select type="text" placeholder="Type here"
+                            class="bg-white text-gray-500  border-gray-300 select select-bordered w-full ">
+                            <option>*</option>
+                            <option>*</option>
+                            <option>*</option>
+                            <option>*</option>
+                            <option>*</option>
+                        </select>
+                    </label>
+                    <label class="form-control w-full flex-grow ">
+                        <div class="label flex-grow">
+                            <span class="label-text text-white">Requisicion</span>
+                        </div>
+                        <input type="text" placeholder="Type here"
+                            class="bg-white text-gray-500 input input-bordered w-full " />
+                    </label>
+                </div>
+                <div class="mb-2">
+                    <hr />
+                </div>
+                <h2 class="text-center text-white font-bold mb-2 mt-[0.8rem] text-[1.2rem]">Datos para liquidación</h2>
+                <div class="grid gap-6 mb-6 md:grid-cols-3 w-full">
+
+                    <div class="flex items-center justify-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Kilom.INI:</span>
+                            </div>
+                            <input type="number" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" min="0" />
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Kilom.FIN:</span>
+                            </div>
+                            <input type="number" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" min="0" />
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Factura No.</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white ">Fecha Emisión:</span>
+                            </div>
+                            <input type="date" placeholder="Type here"
+                                class="bg-[#7b7f85] border-white text-white input input-bordered w-full " />
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <label class="form-control w-full">
+                            <div class="label">
+                                <span class="label-text text-white">Tipo de Combustible</span>
+                            </div>
+                            <select type="text" placeholder="Type here"
+                                class="bg-gray-50 border text-gray-500 border-gray-300 select select-bordered w-full ">
+                                <option>ESPECIAL</option>
+                                <option>REGULAR</option>
+                                <option>DIESEL</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Valor total $</span>
+                            </div>
+                            <input type="number" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" min="0" />
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Total Galones</span>
+                            </div>
+                            <input type="number" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" min="0" />
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">No. Placa</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <label class="form-control w-full ">
+                            <div class="label">
+                                <span class="label-text text-white">Liquidado</span>
+                            </div>
+                            <input type="text" placeholder="Type here"
+                                class="bg-white text-gray-500 input input-bordered w-full" />
+                        </label>
+                    </div>
+                </div>
+                <div class="flex w-full mb-10 ">
+                    <div class="form-control w-full border border-white rounded-lg mr-4">
+                        <label class="label cursor-pointer ">
+                            <span class="label-text text-white">Solicitud</span>
+                            <input type="radio" name="radio-10" class="radio checked:bg-white checked:border-white" checked="checked" />
+                        </label>
+                    </div>
+                    <div class="form-control w-full border border-white rounded-lg">
+                        <label class="label cursor-pointer">
+                            <span class="label-text text-white">X Vale</span>
+                            <input type="radio" name="radio-10" class="radio checked:bg-white checked:border-white" checked="" />
+                        </label>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="mb-2">
+                <hr />
+            </div>
+
+            <div class="p-4 md:p-5">
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg"
+                    style="max-width: 1700px; max-height: 300px; overflow: auto;">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    N.Solicitud
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Deptosoli
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Serie de vale
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Autoriza
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    Motorista
+                                </th>
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
 
 </body>
 
