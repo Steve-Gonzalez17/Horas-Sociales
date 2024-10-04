@@ -14,15 +14,15 @@
     <div class="relative flex flex-col sm:flex-row xl:flex-col items-center justify-center xl:h-full sm:h-auto">
         <div class="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-center p-8">
 
-        <a href="#" onclick="my_modal_1.showModal()">
-            {{-- button 1 --}}
-            <div class="card card-compact bg-base-100 w-96 shadow-xl button-start">
-                <figure class="img-icon-container">
-                    <img src="{{ asset('img/gas-station.png') }}" alt="gas-station" />
-                </figure>
-                <div class="card-body">
-                    <h2 class="card-title">Ingreso de vales de combustible</h2>
-                    <p> &nbsp; Bodega general</p>
+            <a href="#" onclick="my_modal_1.showModal()">
+                {{-- button 1 --}}
+                <div class="card card-compact bg-base-100 w-96 shadow-xl button-start">
+                    <figure class="img-icon-container">
+                        <img src="{{ asset('img/gas-station.png') }}" alt="gas-station" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Ingreso de vales de combustible</h2>
+                        <p> &nbsp; Bodega general</p>
 
                     </div>
                 </div>
@@ -226,31 +226,31 @@
                 <hr />
             </div>
 
-            <div class="p-4 md:p-5">
-            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-white uppercase bg-[#686D76]">
-                            <tr>
-                                <th scope="col" class="px-6 py-3">
-                                    Corr
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Nfactura
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Ser_vale
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Nocompra
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Proveedor
-                                </th>
+            <div class="p-4 md:p-5 ">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-black uppercase bg-gray-50 rounded-t-lg">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Corr
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                            </th>
+                            Nfactura
+                            <th scope="col" class="px-6 py-3">
+                                Ser_vale
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Nocompra
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Proveedor
+                            </th>
 
 
-                            </tr>
-                        </thead>
+                        </tr>
+                    </thead>
                 </table>
-                <div class="relative overflow-x-auto shadow-md sm:rounded-lg"
+                <div class="relative overflow-x-auto shadow-md rounded-b-lg"
                     style="max-width: 1700px; max-height: 300px; overflow: auto;">
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                         <tbody>
@@ -432,24 +432,26 @@
                             <div class="label">
                                 <span class="label-text text-white">Programa</span>
                             </div>
-                            <select type="text"  placeholder="Type here" class="bg-gray-50 border border-gray-300 select select-bordered w-full max-w-xs" >
-                            <option disabled selected>Who shot first?</option>
-                            <option>Han Solo</option>
-                            <option>Greedo</option>
-                        </select>
-                          </label>
+                            <select type="text" placeholder="Type here"
+                                class="bg-gray-50 border border-gray-300 select select-bordered w-full max-w-xs">
+                                <option disabled selected>Who shot first?</option>
+                                <option>Han Solo</option>
+                                <option>Greedo</option>
+                            </select>
+                        </label>
                     </div>
                     <div>
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
                                 <span class="label-text text-white">Suministra</span>
                             </div>
-                            <select type="text"  placeholder="Type here" class="bg-gray-50 border border-gray-300 select select-bordered w-full max-w-xs" >
-                            <option disabled selected>Who shot first?</option>
-                            <option>Han Solo</option>
-                            <option>Greedo</option>
-                        </select>
-                          </label>
+                            <select type="text" placeholder="Type here"
+                                class="bg-gray-50 border border-gray-300 select select-bordered w-full max-w-xs">
+                                <option disabled selected>Who shot first?</option>
+                                <option>Han Solo</option>
+                                <option>Greedo</option>
+                            </select>
+                        </label>
                     </div>
 
                     <div class="dark:text-black">
@@ -473,7 +475,7 @@
                     <div>
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
-                              <span class="label-text">Mision</span>
+                                <span class="label-text">Mision</span>
                             </div>
                             <textarea class="textarea textarea-ghost bg-gray-50 border border-gray-300"
                                 placeholder="Bio"></textarea>
@@ -549,27 +551,31 @@
                                 <option>...</option>
                             </select>
                             <div class="divider divider-error"></div>
-                            <input type="number"  placeholder="Type here" class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
-                              </label>
-                        </div>
-                        <div>
-                            <label class="form-control w-full max-w-xs">
-                                <div class="label">
-                                  <span class="label-text">Convercion</span>
-                                </div>
-                                <input type="number"  placeholder="Type here" class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
-                                <div class="divider divider-error">Total galones por VALE</div>
-                                <input type="number"  placeholder="Type here" class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
-                              </label>
-                        </div>
-                        <div>
-                            <label class="form-control w-full max-w-xs">
-                                <div class="label">
-                                  <span class="label-text">No.Requisicion</span>
-                                </div>
-                                <input type="number"  placeholder="Type here" class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
-                              </label>
-                        </div>
+                            <input type="number" placeholder="Type here"
+                                class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
+                        </label>
+                    </div>
+                    <div>
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                                <span class="label-text">Convercion</span>
+                            </div>
+                            <input type="number" placeholder="Type here"
+                                class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
+                            <div class="divider divider-error">Total galones por VALE</div>
+                            <input type="number" placeholder="Type here"
+                                class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
+                        </label>
+                    </div>
+                    <div>
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                                <span class="label-text">No.Requisicion</span>
+                            </div>
+                            <input type="number" placeholder="Type here"
+                                class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
+                        </label>
+                    </div>
                 </div>
                 <div class="divider divider-error text-white">Precios de referencia</div>
                 <div class="flex w-full mb-10">
@@ -625,27 +631,27 @@
             <div class="divider divider-error"></div>
 
             <div class="p-4 md:p-5">
-            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                            <tr>
-                                <th scope="col" class="px-6 py-3">
-                                    Nsol
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Solicita
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Dept
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Mision
-                                </th>
-                            </tr>
-                        </thead>
-            </table>  
-                <div class="relative overflow-x-auto shadow-md sm:rounded-lg"
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Nsol
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Solicita
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Dept
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Mision
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="relative overflow-x-auto shadow-md rounded-b-lg"
                     style="max-width: 1700px; max-height: 300px; overflow: auto;">
-                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
                         <tbody>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope=""
@@ -1040,7 +1046,7 @@
                                 <span class="label-text text-white ">Solicita:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full " disabled/>
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full " disabled />
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1049,7 +1055,7 @@
                                 <span class="label-text text-white">Depto Solicita:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-white text-gray-500 input input-bordered w-fulls" />
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full " disabled/>
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1058,7 +1064,7 @@
                                 <span class="label-text text-white">Misión:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-white text-gray-500 input input-bordered w-full" />
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled/>
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1067,7 +1073,7 @@
                                 <span class="label-text text-white ">Fecha procesada:</span>
                             </div>
                             <input type="date" placeholder="Type here"
-                                class="bg-[#7b7f85] border-white text-white input input-bordered w-full " />
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full " disabled/>
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1076,7 +1082,7 @@
                                 <span class="label-text text-white">Destino:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-white text-gray-500 input input-bordered w-full" />
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled/>
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1085,7 +1091,7 @@
                                 <span class="label-text text-white">Autoriza:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-white text-gray-500 input input-bordered w-full" />
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled/>
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1094,7 +1100,7 @@
                                 <span class="label-text text-white">Motorista:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-white text-gray-500 input input-bordered w-full" />
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled/>
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1103,7 +1109,7 @@
                                 <span class="label-text text-white">Carnet:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-white text-gray-500 input input-bordered w-full" />
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled/>
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1112,7 +1118,7 @@
                                 <span class="label-text text-white">Tipo combustible:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-white text-gray-500 input input-bordered w-full" />
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled />
                         </label>
                     </div>
 
@@ -1310,13 +1316,15 @@
                     <div class="form-control w-full border border-white rounded-lg mr-4">
                         <label class="label cursor-pointer ">
                             <span class="label-text text-white">Solicitud</span>
-                            <input type="radio" name="radio-10" class="radio checked:bg-white checked:border-white" checked="checked" />
+                            <input type="radio" name="radio-10" class="radio checked:bg-white checked:border-white"
+                                checked="checked" />
                         </label>
                     </div>
                     <div class="form-control w-full border border-white rounded-lg">
                         <label class="label cursor-pointer">
                             <span class="label-text text-white">X Vale</span>
-                            <input type="radio" name="radio-10" class="radio checked:bg-white checked:border-white" checked="" />
+                            <input type="radio" name="radio-10" class="radio checked:bg-white checked:border-white"
+                                checked="" />
                         </label>
                     </div>
                 </div>
@@ -1327,32 +1335,70 @@
                 <hr />
             </div>
 
-            <div class="p-4 md:p-5">
-                <div class="relative overflow-x-auto shadow-md sm:rounded-lg"
+            <div class="p-4 md:p-5 ">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-black uppercase bg-gray-50 rounded-t-lg">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                N.Solicitud
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                            </th>
+                                Deptsoli
+                            <th scope="col" class="px-6 py-3">
+                                Serie de vale
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Autoriza
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Motorista
+                            </th>
+
+
+                        </tr>
+                    </thead>
+                </table>
+                <div class="relative overflow-x-auto shadow-md rounded-b-lg"
                     style="max-width: 1700px; max-height: 300px; overflow: auto;">
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                            <tr>
-                                <th scope="col" class="px-6 py-3">
-                                    N.Solicitud
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Deptosoli
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Serie de vale
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Autoriza
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Motorista
-                                </th>
-
-
-                            </tr>
-                        </thead>
                         <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope=""
+                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    ...
+                                </th>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                                <td class="px-6 py-4">
+                                    ...
+                                </td>
+                            </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope=""
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
