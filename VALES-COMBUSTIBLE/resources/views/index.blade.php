@@ -234,8 +234,8 @@
                                 Corr
                             </th>
                             <th scope="col" class="px-6 py-3">
+                                Nfactura
                             </th>
-                            Nfactura
                             <th scope="col" class="px-6 py-3">
                                 Ser_vale
                             </th>
@@ -413,8 +413,10 @@
     <!-- Model 2 -->
     <dialog id="my_modal_2" class="modal ">
         <div class="modal-box max-w-7xl bg-[#84878d]">
-            <h2 class="text-center font-bold text-white">Entrega de vales para combustible (Disel o gasolina) </h2>
-            <div class="divider divider-error"></div>
+            <h2 class="text-center font-bold text-white mb-3">Entrega de vales para combustible (Disel o gasolina) </h2>
+            <div class="mb-2">
+                <hr />
+            </div>
             <form class="p-4 md:p-5 ">
 
                 <div class="grid gap-2 mb-10 md:grid-cols-3">
@@ -526,6 +528,8 @@
                                 class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
                         </label>
                     </div>
+
+                    <!-- 
                     <div>
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
@@ -555,6 +559,7 @@
                                 class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
                         </label>
                     </div>
+                    
                     <div>
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
@@ -566,8 +571,8 @@
                             <input type="number" placeholder="Type here"
                                 class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
                         </label>
-                    </div>
-                    <div>
+                    </div> -->
+                    <!-- <div>
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
                                 <span class="label-text">No.Requisicion</span>
@@ -575,18 +580,80 @@
                             <input type="number" placeholder="Type here"
                                 class="bg-gray-50 border border-gray-300 input input-bordered w-full max-w-xs" />
                         </label>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="divider divider-error text-white">Precios de referencia</div>
                 <div class="flex w-full mb-10">
+                    <label class="form-control w-full flex-grow mr-4">
+                        <div class="label flex-grow">
+                            <span class="label-text text-white">Combustible:</span>
+                        </div>
+                        <select type="text" placeholder="Type here"
+                            class="bg-white text-gray-500  border-gray-300 select select-bordered w-full ">
+                            <option>*</option>
+                            <option>*</option>
+                            <option>*</option>
+                            <option>*</option>
+                            <option>*</option>
+                        </select>
+                    </label>
                     <label class="form-control flex-grow">
                         <div class="label flex-grow">
-                            <span class="label-text flex-grow text-white">De Compra</span>
+                            <span class="label-text flex-grow text-white"></span>
                         </div>
                         <input type="number" placeholder="Type here"
                             class="bg-gray-50 border border-gray-300 input input-bordered flex-grow" />
                     </label>
-                    <div class="divider divider-horizontal divider-error"></div>
+                </div>
+                <div class="flex w-full mb-10">
+                    <label class="form-control flex-grow mr-4">
+                        <div class="label flex-grow">
+                            <span class="label-text flex-grow text-white">Conversión</span>
+                        </div>
+                        <input type="number" placeholder="Type here"
+                            class="bg-gray-50 border border-gray-300 input input-bordered flex-grow" />
+                    </label>
+                    <label class="form-control flex-grow">
+                        <div class="label flex-grow">
+                            <span class="label-text flex-grow text-white">Total de Galones por Vale</span>
+                        </div>
+                        <input type="number" placeholder="Type here"
+                            class="bg-gray-50 border border-gray-300 input input-bordered flex-grow" />
+                    </label>
+                </div>
+                <div class="flex w-full mb-10">
+                <label class="form-control w-full flex-grow mr-4">
+                        <div class="label flex-grow">
+                            <span class="label-text text-white">Serie:</span>
+                        </div>
+                        <select type="text" placeholder="Type here"
+                            class="bg-white text-gray-500  border-gray-300 select select-bordered w-full ">
+                            <option>*</option>
+                            <option>*</option>
+                            <option>*</option>
+                            <option>*</option>
+                            <option>*</option>
+                        </select>
+                    </label>
+                    <label class="form-control flex-grow">
+                        <div class="label flex-grow">
+                            <span class="label-text flex-grow text-white">No. Requisición</span>
+                        </div>
+                        <input type="number" placeholder="Type here"
+                            class="bg-gray-50 border border-gray-300 input input-bordered flex-grow" />
+                    </label>
+                </div>
+                <div class="mb-2">
+                    <hr />
+                </div>
+                <div class=" text-white text-center font-bold">Precios de referencia</div>
+                <div class="flex w-full mb-10">
+                    <label class="form-control flex-grow mr-4">
+                        <div class="label flex-grow ">
+                            <span class="label-text flex-grow text-white ">De Compra</span>
+                        </div>
+                        <input type="number" placeholder="Type here"
+                            class="bg-gray-50 border border-gray-300 input input-bordered flex-grow" />
+                    </label>
                     <label class="form-control flex-grow">
                         <div class="label flex-grow">
                             <span class="label-text flex-grow text-white">Actual</span>
@@ -595,17 +662,18 @@
                             class="bg-gray-50 border border-gray-300 input input-bordered flex-grow" />
                     </label>
                 </div>
-
-                <div class="divider divider-error text-white">Cantidad de VALES</div>
+                <div class="mb-2">
+                    <hr />
+                </div>
+                <div class=" text-white text-center font-bold">Cantidad de VALES</div>
                 <div class="flex w-full mb-10">
-                    <label class="form-control flex-grow">
+                    <label class="form-control flex-grow mr-4">
                         <div class="label flex-grow">
                             <span class="label-text flex-grow text-white">Autorizados</span>
                         </div>
                         <input type="number" placeholder="Type here"
                             class="bg-gray-50 border border-gray-300 input input-bordered flex-grow" />
                     </label>
-                    <div class="divider divider-horizontal divider-error"></div>
                     <label class="form-control flex-grow">
                         <div class="label flex-grow">
                             <span class="label-text flex-grow text-white">Digitados</span>
@@ -614,7 +682,9 @@
                             class="bg-gray-50 border border-gray-300 input input-bordered flex-grow" />
                     </label>
                 </div>
-                <div class="divider divider-error"></div>
+                <div class="mb-2">
+                    <hr />
+                </div>
                 <label class="form-control flex-grow mb-10">
                     <div class="label  flex-grow">
                         <span class="label-text flex-grow text-white">Serie de Vale</span>
@@ -628,7 +698,9 @@
 
             </form>
 
-            <div class="divider divider-error"></div>
+            <div class="mb-2">
+                <hr />
+            </div>
 
             <div class="p-4 md:p-5">
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
@@ -1055,7 +1127,7 @@
                                 <span class="label-text text-white">Depto Solicita:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full " disabled/>
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full " disabled />
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1064,7 +1136,7 @@
                                 <span class="label-text text-white">Misión:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled/>
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled />
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1073,7 +1145,7 @@
                                 <span class="label-text text-white ">Fecha procesada:</span>
                             </div>
                             <input type="date" placeholder="Type here"
-                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full " disabled/>
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full " disabled />
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1082,7 +1154,7 @@
                                 <span class="label-text text-white">Destino:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled/>
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled />
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1091,7 +1163,7 @@
                                 <span class="label-text text-white">Autoriza:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled/>
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled />
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1100,7 +1172,7 @@
                                 <span class="label-text text-white">Motorista:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled/>
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled />
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1109,7 +1181,7 @@
                                 <span class="label-text text-white">Carnet:</span>
                             </div>
                             <input type="text" placeholder="Type here"
-                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled/>
+                                class="bg-gray-200 text-gray-400 border-gray-300 rounded-md  w-full" disabled />
                         </label>
                     </div>
                     <div class="flex justify-center items-center">
@@ -1343,8 +1415,9 @@
                                 N.Solicitud
                             </th>
                             <th scope="col" class="px-6 py-3">
-                            </th>
                                 Deptsoli
+                            </th>
+
                             <th scope="col" class="px-6 py-3">
                                 Serie de vale
                             </th>
