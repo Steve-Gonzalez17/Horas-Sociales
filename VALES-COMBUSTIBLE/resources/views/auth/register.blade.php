@@ -32,6 +32,30 @@
                     </div>
                     <div>
                         <label>
+                            <i class='bx bx-user'></i>
+                            <input class="input_custom" id="lastname" type="lastname" @error('lastname') is-invalid @enderror" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" autofocus placeholder="Apellido">
+                            
+                        </label>
+                        @error('lastname')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-user'></i>
+                            <input class="input_custom" id="username" type="username" @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus placeholder="user">
+                            
+                        </label>
+                        @error('username')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                    </div>
+                    <div>
+                        <label>
                             <i class='bx bx-key'></i>
                             <input class="input_custom" id="password" type="password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" autofocus placeholder="Contraseña">
                         </label>
