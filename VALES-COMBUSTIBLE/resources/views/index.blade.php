@@ -366,7 +366,7 @@
                     <button class="ml-4 btn btn-accent" @click="activeTab = 'tabla2'" :class="{ 'btn-accent': activeTab === 'tabla2' }">Tabla 2</button>
                 </div>
             <div class="divider divider-error"></div>
-            <form class="p-4 md:p-5 ">
+            <form class="p-4 md:p-5 " style="display: flex; flex-direction: column; justify-content: space-between">
                 <div x-show="activeTab === 'tabla1'">
                     @include('components.tabla-1')
                 </div>
@@ -374,149 +374,13 @@
                 <div x-show="activeTab === 'tabla2'">
                     @include('components.tabla-2')
                 </div>
-                <button class="btn btn-wide flex-grow">Guardar</button>
+
+                <div style="width: 100%; display: flex; justify-content: space-between;">
+                    <button class="btn btn-wide" style="margin-left: 1.5em">Guardar</button>
+                    <button class="btn btn-wide" style="margin-right: 1.5em">Cancelar</button>
+                </div>                
+
             </form>
-
-            <div class="divider"></div>
-
-            <div class="p-4 md:p-5">
-                <div class="relative overflow-x-auto shadow-md sm:rounded-lg"
-                    style="max-width: 1700px; max-height: 300px; overflow: auto;">
-                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                            <tr>
-                                <th scope="col" class="px-6 py-3">
-                                    Corr
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Nfactura
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    ...
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    ...
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    ...
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope=""
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    ...
-                                </th>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope=""
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    ...
-                                </th>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope=""
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    ...
-                                </th>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope=""
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    ...
-                                </th>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope=""
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    ...
-                                </th>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                            </tr>
-                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope=""
-                                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    ...
-                                </th>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                                <td class="px-6 py-4">
-                                    ...
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-
-            </div>
         </div>
         <form method="dialog" class="modal-backdrop">
             <button>close</button>
