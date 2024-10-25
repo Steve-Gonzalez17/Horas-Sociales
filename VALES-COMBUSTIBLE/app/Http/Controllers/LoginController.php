@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
@@ -19,6 +20,15 @@ class LoginController extends Controller
     /**
      * Maneja el inicio de sesión del usuario.
      */
+
+     public function showAdminPanel()
+{
+    $users = User::all();
+    $currentUser = Session::get('user');
+    return view('admin.AdminPanel', compact('users', 'currentUser'));
+}
+
+
     public function login(Request $request)
     {
         // Valida los datos del formulario
@@ -30,16 +40,20 @@ class LoginController extends Controller
         // Busca el usuario en la base de datos
         $user = DB::table('users')->where('username', $request->username)->first();
 
+        
         // Verifica si el usuario existe y la contraseña es correcta
         if ($user && password_verify($request->password, $user->password)) {
-            // Inicia sesión y guarda el usuario en la sesión
-            Session::put('user', $user);
-            return redirect('/'); // Cambia esto según tu ruta deseada
+            if ($user->username == 'admin') { // o $user->role == 'admin' si tienes roles en tu modelo
+                Session::put('user', $user);
+                return $this->showAdminPanel(); // Redirecciona al panel de admin
+            } else {
+                Session::put('user', $user);
+                return redirect('/'); // Redirecciona al usuario regular
+            }
+        } else {
+            // Maneja el error de autenticación (por ejemplo, redireccionar con un mensaje de error)
+            return redirect()->back()->withErrors(['login' => 'Credenciales incorrectas']);
         }
-
-        return back()->withErrors([
-            'username' => 'Credenciales incorrectas.',
-        ]);
     }
 
     /**
