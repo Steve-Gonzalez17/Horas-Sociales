@@ -19,7 +19,8 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'email',
+        'lastname',
+        'username',
         'password',
     ];
 
@@ -41,4 +42,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    /**
+     * Get the name of the password column for the authentication.
+     *
+     * @return string
+     */
+    public function getAuthPasswordName()
+    {
+        return 'password'; // Asumiendo que tu columna de contraseña se llama 'password'
+    }
 }

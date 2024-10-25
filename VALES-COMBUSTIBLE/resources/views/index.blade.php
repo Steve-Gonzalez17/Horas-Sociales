@@ -621,7 +621,7 @@
                     </label>
                 </div>
                 <div class="flex w-full mb-10">
-                <label class="form-control w-full flex-grow mr-4">
+                    <label class="form-control w-full flex-grow mr-4">
                         <div class="label flex-grow">
                             <span class="label-text text-white">Serie:</span>
                         </div>
@@ -692,9 +692,13 @@
                     <input type="number" placeholder="Type here"
                         class="bg-gray-50 border border-gray-300 input input-bordered flex-grow" />
                 </label>
-                <div class="flex items-center justify-center">
-                    <button class="btn btn-outline flex-grow w-[15rem] text-black btn-white ">Guardar</button>
+                <div class="w-full flex items-center justify-center">
+                    <button type="button"
+                        class="btn-block text-white border border-white font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 transition-colors duration-300 ease-in-out  hover:text-black hover:bg-white focus:ring-4 focus:outline-none focus:ring-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-white dark:focus:ring-white text-[1.2rem]">
+                        Generar
+                    </button>
                 </div>
+
 
             </form>
 
