@@ -45,7 +45,7 @@ class LoginController extends Controller
         if ($user && password_verify($request->password, $user->password)) {
             if ($user->username == 'admin') { // o $user->role == 'admin' si tienes roles en tu modelo
                 Session::put('user', $user);
-                return $this->showAdminPanel(); // Redirecciona al panel de admin
+                return redirect('/admin');// Redirecciona al panel de admin
             } else {
                 Session::put('user', $user);
                 return redirect('/'); // Redirecciona al usuario regular
