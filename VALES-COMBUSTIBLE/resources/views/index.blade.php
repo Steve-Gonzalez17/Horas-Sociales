@@ -12,22 +12,22 @@
 <body class="bg-[#30475e]">
 
     <div class="relative flex flex-col sm:flex-row xl:flex-col items-center justify-center xl:h-full sm:h-auto">
-        <!-- @if(session('user') && session('user')->username === 'admin') -->
+        @if(session('user') && session('user')->username === 'admin')
         <!-- Botón para la perspectiva de administrador -->
-        <!-- <a href="{{ url('/') }}">
+        <a href="{{ url('/') }}">
         <button type="button" class="text-white bg-[#30475e] hover:bg-[#465f79] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 m-2">
         
         Perspectiva General
     </button>
-    </a> -->
-    <!-- @endif -->
+    </a>
+    @endif
 
-     <!-- @if(session('user') && session('user')->username === 'admin') -->
+     @if(session('user') && session('user')->username === 'admin')
         <!-- Botón para la perspectiva de administrador -->
-        <!-- <button type="button" class="text-white bg-[#30475e] hover:bg-[#465f79] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 m-2">
+        <button type="button" class="text-white bg-[#30475e] hover:bg-[#465f79] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 m-2">
             Perspectiva de Administrador
-        </button> -->
-    <!-- @endif -->
+        </button>
+    @endif
         <div class="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-center p-8">
 
             <a href="#" onclick="my_modal_1.showModal()">

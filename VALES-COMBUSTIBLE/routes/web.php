@@ -28,11 +28,6 @@ Route::middleware(['checksession'])->group(function () {
         return view('index');
     });
 
-    Route::get('/admin', function () {
-        $users = User::all(); 
-        return view('admin/AdminPanel', ['users' => $users, 'currentUser' => Session::get('user')]);
-    });
-
     //Rutas para el admin
     Route::post('/user/store', [UserController::class, 'store'])->name('store.user');
     Route::put('/user/update', [UserController::class, 'update'])->name('update.user');
